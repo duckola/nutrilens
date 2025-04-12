@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.nutrilens.controller.ScanFoodController">
+
+    <top>
+        <Label text="📷 Scan Your Food" styleClass="title" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <ImageView fx:id="imageView" fitHeight="200" fitWidth="300" preserveRatio="true"/>
+            <Button text="Upload Image" onAction="#handleUpload"/>
+            <Button text="Detect Nutrients" onAction="#handleDetect" />
+            <TextArea fx:id="resultArea" prefHeight="200" prefWidth="400" editable="false"/>
+        </VBox>
+    </center>
+
+</BorderPane>

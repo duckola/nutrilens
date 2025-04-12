@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.nutrilens.controller.GoalController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 25;">
+
+    <Label text="🎯 Set Your Daily Nutrition Goals" style="-fx-font-size: 18;"/>
+    <TextField fx:id="caloriesField" promptText="Calories"/>
+    <TextField fx:id="proteinField" promptText="Protein (g)"/>
+    <TextField fx:id="fatField" promptText="Fat (g)"/>
+    <TextField fx:id="carbField" promptText="Carbs (g)"/>
+    <Button text="💾 Save Goals" onAction="#handleSaveGoal"/>
+    <Label fx:id="statusLabel" textFill="green"/>
+</VBox>

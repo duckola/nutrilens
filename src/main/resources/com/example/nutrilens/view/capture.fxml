@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.nutrilens.controller.CaptureController"
+      spacing="15" alignment="CENTER" style="-fx-padding: 25;">
+
+
+    <Label text="🍽️ Upload Food Image" style="-fx-font-size: 18;"/>
+    <ImageView fx:id="previewImage" fitWidth="200" fitHeight="200" preserveRatio="true"/>
+    <Button text="📁 Choose Image" onAction="#handleChooseImage"/>
+    <Button text="🔍 Detect Food (LogMeal API)" onAction="#handleDetectFood"/>
+    <TextArea fx:id="resultArea" prefWidth="300" prefHeight="200"/>
+</VBox>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.nutrilens.controller.DashboardController"
+      spacing="15" alignment="CENTER" style="-fx-padding: 25;">
+
+    <Label text="📊 Daily Summary &amp; AI Suggestions" style="-fx-font-size: 18;"/>
+    <ProgressBar fx:id="caloriesBar" prefWidth="300"/>
+    <Label fx:id="caloriesLabel"/>
+    <ProgressBar fx:id="proteinBar" prefWidth="300"/>
+    <Label fx:id="proteinLabel"/>
+    <ProgressBar fx:id="fatBar" prefWidth="300"/>
+    <Label fx:id="fatLabel"/>
+    <ProgressBar fx:id="carbBar" prefWidth="300"/>
+    <Label fx:id="carbLabel"/>
+    <TextArea fx:id="aiSuggestionArea" prefHeight="150" wrapText="true"/>
+    <Button text="💡 Generate Diet Suggestion" onAction="#generateSuggestion"/>
+</VBox>

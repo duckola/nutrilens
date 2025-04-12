@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.nutrilens.controller.HomeController"
+      alignment="CENTER" spacing="20" style="-fx-padding: 25;">
+
+    <Label text="NutriLens 🍽️" style="-fx-font-size: 28;" />
+
+    <Button text="📷 Scan Food" onAction="#openCapture"/>
+    <Button text="👤 Profile" onAction="#openProfile"/>
+    <Button text="📊 View Logs" onAction="#openLogs"/>
+    <Button text="🧠 AI Suggestion" onAction="#openSuggestion"/>
+</VBox>
